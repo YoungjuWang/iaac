@@ -14,12 +14,12 @@ resource "libvirt_domain" "deploy" {
 
   network_interface {
 	network_id = libvirt_network.deploy_network.id
-	addresses = ["${ var.net_deploy_address }.${ count.index + 20 }"]
+	addresses = ["${ var.net_deploy_address }.${ count.index + 90 }"]
 	}
 
   network_interface {
 	network_id = libvirt_network.api_network.id
-	addresses = ["${ var.net_api_address }.${ count.index + 20 }"]
+	addresses = ["${ var.net_api_address }.${ count.index + 90 }"]
 	}
 
   network_interface {
