@@ -19,13 +19,13 @@ module "kubernetes_module" {
   net_api_address = "10.62.62"
 
 ### About Nodes
-  controller_count = 2
-  controller_size = 45474836480
-  controller_mem = 16384
-  controller_cpu = 8
+  master_count = 2
+  master_size = 45474836480
+  master_mem = 16384
+  master_cpu = 8
 
-  compute_count = 3
-  compute_size = 45474836480
-  compute_mem = 16384
-  compute_cpu = 8
+  worker_count = 3
+  worker_size = 45474836480
+  worker_mem = 16384
+  worker_cpu = 8
 }
