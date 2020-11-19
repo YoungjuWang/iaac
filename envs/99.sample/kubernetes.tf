@@ -12,20 +12,25 @@ module "kubernetes_module" {
 ### Netowrk
   net_deploy_name = "wyj_k8s_deploy0"
   net_deploy = "10.98.90.0/24"
-  net_deploy_address = "10.62.90"
+  net_deploy_address = "10.98.90"
 
   net_api_name = "wyj_k8s_api0"
   net_api = "10.98.62.0/24"
-  net_api_address = "10.62.62"
+  net_api_address = "10.98.62"
 
 ### About Nodes
-  controller_count = 2
-  controller_size = 45474836480
-  controller_mem = 16384
-  controller_cpu = 8
+  master_count = 2
+  master_size = 45474836480
+  master_mem = 16384
+  master_cpu = 8
 
-  compute_count = 3
-  compute_size = 45474836480
-  compute_mem = 16384
-  compute_cpu = 8
+  worker_count = 3
+  worker_size = 45474836480
+  worker_mem = 16384
+  worker_cpu = 8
+
+  deploy_count = 1
+  deploy_size = 25474836480
+  deploy_mem = 16384
+  deploy_cpu = 8
 }

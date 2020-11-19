@@ -20,3 +20,11 @@ resource "libvirt_volume" "worker_volume" {
   size = var.worker_size
   count = var.worker_count
 }
+
+resource "libvirt_volume" "deploy_volume" {
+  name = "deploy_${ var.servername }_${count.index+1}.qcow2"
+  pool = var.volume_pool_name
+  base_volume_id = libvirt_volume.base_volume.id
+  size = var.deploy_size
+  count = var.deploy_count
+}
