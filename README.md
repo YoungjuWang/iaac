@@ -25,7 +25,10 @@
 │   ├── 00.yjwang_pool
 │   │   ├── main.tf
 │   │   └── terraform.tfstate
-│   ├── yjwang_201117_16_54
+│   ├── 99.sample
+│   │   └── main.tf
+│   └── wyj02
+│       └── main.tf
 └── modules
     ├── ceph
     ├── kubernetes
@@ -42,8 +45,7 @@
     │   ├── 98.vars_network.tf
     │   ├── 98.vars_volume.tf
     │   └── cloudinit
-    │       ├── deploy_init.cfg
-    │       └── network_config.cfg
+    │       └── deploy_init.cfg
     └── pool
         ├── main.tf
         └── vars.tf
