@@ -2,7 +2,7 @@ module "kubernetes_module" {
   source = "../../modules/kubernetes"
 
 ### General
-  servername = "wyj00"
+  servername = "wyj01"
 
 ### Volume
   volume_pool_name = "yjwang_pool"
@@ -19,18 +19,18 @@ module "kubernetes_module" {
   net_api_address = "10.98.62"
 
 ### About Nodes
-  master_count = 2
-  master_size = 45474836480
-  master_mem = 16384
   master_cpu = 8
+  master_mem = 16384
+  master_count = 2
+  master_size = 25474836480
 
-  worker_count = 3
-  worker_size = 45474836480
-  worker_mem = 16384
   worker_cpu = 8
+  worker_mem = 16384
+  worker_count = 3
+  worker_size = 25474836480
 
+  deploy_cpu = 8
+  deploy_mem = 16384
   deploy_count = 1
   deploy_size = 25474836480
-  deploy_mem = 16384
-  deploy_cpu = 8
 }

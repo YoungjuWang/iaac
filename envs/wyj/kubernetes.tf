@@ -2,7 +2,7 @@ module "kubernetes_module" {
   source = "../../modules/kubernetes"
 
 ### General
-  servername = "wyj01"
+  servername = "wyj"
 
 ### Volume
   volume_pool_name = "yjwang_pool"
